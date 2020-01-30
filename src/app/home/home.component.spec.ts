@@ -35,9 +35,15 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     const span = compiled.querySelector('.content span');
-    console.log(span);
-    console.log(span.textContent);
-    expect(span.textContent).toContain('UnitTesting app is running!');
+    const text = span.textContent;
+    console.log(text);
+    expect(text).toContain('UnitTesting app is running!');
+  });
+
+  it('should count multiplication two numbers', () => {
+    const fixture = TestBed.createComponent(HomeComponent);
+    const result = fixture.componentInstance.countMultiplication(2, 2);
+    expect(result).toEqual(4);
   });
 
 });
