@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-UnTest',
-  template: `
-    <p>
-      un-test works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './un-test.component.html',
+  styleUrls: ['./un-test.component.scss'],
 })
 export class UnTestComponent implements OnInit {
 

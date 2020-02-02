@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
-const routes = [
+export const routes = [
   {
     path: '',
     component: HomeComponent,
   },
   {
-    path: 'second',
+    path: 'ut',
     loadChildren: () => import('@app/untest').then(m => m.UnTestModule),
   },
 ]

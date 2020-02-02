@@ -24,10 +24,10 @@ describe('HomeComponent', () => {
   });
 
   
-  it(`should have as title 'UnTestComponent'`, () => {
+  it(`should have as title 'HomeComponent'`, () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('UnitTesting');
+    expect(app.title).toEqual('HomeComponent');
   });
 
   it('should render title', () => {
@@ -37,7 +37,7 @@ describe('HomeComponent', () => {
     const span = compiled.querySelector('.content span');
     const text = span.textContent;
     console.log(text);
-    expect(text).toContain('UnitTesting app is running!');
+    expect(text).toContain('HomeComponent app is running!');
   });
 
   it('should count multiplication two numbers', () => {
